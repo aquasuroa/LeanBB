@@ -1,0 +1,17 @@
+# 开启重写引擎
+RewriteEngine On
+
+# ---- (可选) 如果你的网站不在根目录，尝试取消注释并设置正确的 RewriteBase ----
+# 例如，如果你的论坛在 http://example.com/forum/，则设置为 RewriteBase /forum/
+# RewriteBase /
+
+# 如果请求的是一个已存在的文件，则不进行重写
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+# 如果请求的是一个已存在的目录，则不进行重写
+RewriteCond %{REQUEST_FILENAME} -d
+# 如果满足以上任一条件，则停止处理后续规则
+RewriteRule ^ - [L]
+
+# 将所有其他请求重写到 lean.php，并将原始请求路径作为 PATH_INFO
+# 例如，访问 /auth 会被重写为 /lean.php/auth
+RewriteRule ^(.*)$ lean.php/$1 [L,QSA]
