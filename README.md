@@ -4,8 +4,6 @@
 
 **LeanBB** is a very basic forum built with just one PHP file and SQLite, aiming to be simple and easy to set up. It’s heavily inspired by **DFFZMXJ**’s wonderful "forum-by-a-single-dog" project, and I’m so grateful for her work, which gave me a starting point. With some help from **Gemini 2.5 Pro** and **Grok 3**, I’ve tried to add a few features, but I’m still learning PHP, so it’s far from perfect. 😅 This is a small project for fun or learning, and I hope it’s useful to someone!
 
-**Demo**: You can check out LeanBB at [Here](http://esplori2024.byethost9.com/) (you might need a VPN depending on your location).
-
 ---
 
 ## 🌟 What It Does
